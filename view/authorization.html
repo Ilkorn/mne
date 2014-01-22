@@ -1,16 +1,32 @@
-<div>
-<form class="login_form">
-    <h2>Log In</h2>
-    Username </br><input type="text" ng-model="login_username"/></br>
-    Password </br><input type="password" ng-model="login_password"/></br>
-    <button class='btn' ng-click="login()" ng-model="login_btn">Log In</button>
-  </form>
-  <form class="signup_form">
-    <h2>Sign Up</h2>
-    Username </br><input type="text" ng-model="signup_username"/></br>
-    Create a Password </br><input type="password" ng-model="signup_password"/></br>
-    <button class='btn' ng-click="signUp()" ng-model="signup_btn">Sign Up</button>
-  </form>
-  </br>
-  <button class='btn' ng-click="FB_login()">Connect with Facebook</button>
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-default authorization-page-height">
+            <div class="panel-body">
+                <form class="login_form">
+                    <h2>Log In</h2>
+                    Username </br><input type="text" ng-model="login_username"/></br>
+                    Password </br><input type="password" ng-model="login_password"/></br>
+                    <button class='btn'>Log In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1">
+        <div class="panel panel-default  authorization-page-height">
+            <div class="panel-body">
+                most
+                popular
+                lots
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-md-offset-1">
+        <div class="panel panel-default authorization-page-height">
+            <div class="panel-body">
+                you
+                friend
+                there
+            </div>
+        </div>
+    </div>
 </div>

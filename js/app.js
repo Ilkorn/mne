@@ -8,6 +8,7 @@ angular.module('mne', ['myFilter', 'ui.bootstrap', 'bookappServices', 'ngRoute']
             when('/login', {templateUrl: 'view/login.html',   controller: LoginCtrl}).
             when('/items', {templateUrl: 'view/public-items.html',   controller: MainCtrl}).
             when('/add', {templateUrl: 'view/add-book.html',   controller: MainCtrl}).
+            when('/authorization', {templateUrl: 'view/authorization.html',   controller: MainCtrl}).
             otherwise({redirectTo: '/login'});
 }]);
 
@@ -18,14 +19,11 @@ function appCrtl($scope, $location){
         var user = {authorized: true};
         $scope.user = user;
         $scope.language = {name:'eng', displayName:'English'};
-
+        $scope.lots = { hello:"hello",
+            part:"part",
+            element:"element"}
     }
 
-
-
-    $scope.lots = { hello:"hello",
-                    part:"part",
-                    element:"element"}
 
     $scope.changeView = function(name){
         $scope.currentView = name;
@@ -48,6 +46,4 @@ function appCrtl($scope, $location){
             }
         }
     }
-
-
 }
