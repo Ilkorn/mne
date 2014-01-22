@@ -38,31 +38,31 @@
 
                 <ul class="nav navbar-nav">
                     <li ng-class="{items:'active'}[currentView]" ng-show="user.authorized">
-                        <a href="#" ng-click="changeView('items')">Meetings</a>
+                        <a href="" ng-click="changeView('items')">Meetings</a>
                     </li>
                     <li ng-class="{login:'active'}[currentView]" ng-show="user.authorized">
-                        <a href="#" ng-click="changeView('login')">Place</a>
+                        <a href="" ng-click="changeView('login')">Place</a>
                     </li>
                     <li ng-class="{add:'active'}[currentView]" ng-show="user.authorized">
-                        <a  href="#" ng-click="changeView('add')">Create meeting</a>
+                        <a  href="" ng-click="changeView('add')">Create meeting</a>
                     </li>
                     <li ng-class="{profile:'active'}[currentView]" ng-show="user.authorized">
-                        <a  href="#" ng-click="changeView('add')">Profile</a>
+                        <a  href="" ng-click="changeView('add')">Profile</a>
                     </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li ng-class="{about:'active'}[currentView]" ng-hide="user.authorized">
-                        <a  href="#" ng-click="changeView('add')">About</a>
+                        <a  href="" ng-click="changeView('add')">About</a>
                     </li>
                     <li ng-class="{joinus:'active'}[currentView]" ng-hide="user.authorized">
-                        <a  href="#" ng-click="changeView('add')">Join us</a>
+                        <a  href="" ng-click="changeView('add')">Join us</a>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">{{language.displayName}} <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" ng-click="switchLanguage('rus')">Русский</a></li>
-                            <li><a href="#" ng-click="switchLanguage('eng')">English</a></li>
+                            <li><a href="" ng-click="switchLanguage('rus')">Русский</a></li>
+                            <li><a href="" ng-click="switchLanguage('eng')">English</a></li>
                         </ul>
                     </li>
                 </ul>
