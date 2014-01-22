@@ -4,6 +4,12 @@ body {
   padding-top: 20px;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 970px;
+}
+
 .wrapper {
     width: 960px;
     margin: 0 auto;
