@@ -5,10 +5,12 @@
 angular.module('mne', ['myFilter', 'ui.bootstrap', 'bookappServices', 'ngRoute']).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider.
-            when('/login', {templateUrl: 'view/login.html',   controller: LoginCtrl}).
-            when('/items', {templateUrl: 'view/public-items.html',   controller: MainCtrl}).
-            when('/add', {templateUrl: 'view/add-book.html',   controller: MainCtrl}).
+            when('/meetings', {templateUrl: 'view/meetings.html',   controller: LoginCtrl}).
+            when('/places', {templateUrl: 'view/places.html',   controller: MainCtrl}).
+            when('/createMeeting', {templateUrl: 'view/meeting-crt.html',   controller: MainCtrl}).
             when('/authorization', {templateUrl: 'view/authorization.html',   controller: MainCtrl}).
+            when('/profile', {templateUrl: 'view/profile.html',   controller: MainCtrl}).
+            when('/about', {templateUrl: 'view/about.html',   controller: MainCtrl}).
             otherwise({redirectTo: '/login'});
 }]);
 

@@ -37,25 +37,25 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav">
-                    <li ng-class="{items:'active'}[currentView]" ng-show="user.authorized">
-                        <a href="" ng-click="changeView('items')">Meetings</a>
+                    <li ng-class="{meetings:'active'}[currentView]" ng-show="user.authorized">
+                        <a href="" ng-click="changeView('meetings')">Meetings</a>
                     </li>
-                    <li ng-class="{login:'active'}[currentView]" ng-show="user.authorized">
-                        <a href="" ng-click="changeView('login')">Place</a>
+                    <li ng-class="{places:'active'}[currentView]" ng-show="user.authorized">
+                        <a href="" ng-click="changeView('places')">Places</a>
                     </li>
-                    <li ng-class="{add:'active'}[currentView]" ng-show="user.authorized">
-                        <a  href="" ng-click="changeView('add')">Create meeting</a>
+                    <li ng-class="{createMeeting:'active'}[currentView]" ng-show="user.authorized">
+                        <a  href="" ng-click="changeView('createMeeting')">Create meeting</a>
                     </li>
                     <li ng-class="{profile:'active'}[currentView]" ng-show="user.authorized">
-                        <a  href="" ng-click="changeView('add')">Profile</a>
+                        <a  href="" ng-click="changeView('profile')">Profile</a>
                     </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li ng-class="{about:'active'}[currentView]" ng-hide="user.authorized">
-                        <a  href="" ng-click="changeView('add')">About</a>
+                        <a  href="" ng-click="changeView('about')">About</a>
                     </li>
-                    <li ng-class="{joinus:'active'}[currentView]" ng-hide="user.authorized">
+                    <li ng-class="{authorization:'active'}[currentView]" ng-hide="user.authorized">
                         <a  href="" ng-click="changeView('authorization')">Join us</a>
                     </li>
                     <li class="dropdown">
